@@ -3,7 +3,7 @@
  * Slim Twig Flash
  * 
  * @link https://github.com/kanellov/slim-twig-flash for the canonical source repository
- * @copyright Copyright (c) 2008-2015 Vassilis Kanellopoulos <contact@kanellov.com>
+ * @copyright Copyright (c) 2016 Vassilis Kanellopoulos <contact@kanellov.com>
  * @license GNU GPLv3 http://www.gnu.org/licenses/gpl-3.0-standalone.html
  */
 
