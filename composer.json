@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Slim\\Views\\": "src"
+            "Knlv\\Slim\\Views\\": "src"
         }
     }
 }
