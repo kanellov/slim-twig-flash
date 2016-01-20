@@ -1,0 +1,5 @@
+{% for key, msgs in flash() %}
+{% for msg in msgs %}
+{{key}}: {{ msg }}
+{% endfor %}
+{% endfor %}
