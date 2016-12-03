@@ -25,7 +25,7 @@ Requires:
 
 ``` php
 ...
-$view->addExtension(new Knlv\Slim\View\TwigMessages(
+$view->addExtension(new Knlv\Slim\Views\TwigMessages(
     new Slim\Flash\Messages()
 ));
 ...
