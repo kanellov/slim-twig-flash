@@ -1,7 +1,7 @@
 <?php
 /**
  * Test for Slim Twig Flash.
- * 
+ *
  * @link https://github.com/kanellov/slim-twig-flash for the canonical source repository
  *
  * @copyright Copyright (c) 2016 Vassilis Kanellopoulos <contact@kanellov.com>
@@ -33,10 +33,14 @@ class TwigMessagesTest extends \PHPUnit_Framework_TestCase
     {
         $this->flash = $this->getMockBuilder('Slim\Flash\Messages')
             ->disableOriginalConstructor()
+            ->setMethods(array(
+              'getMessages',
+              'getMessage'
+            ))
             ->getMock();
         $this->flash->expects($this->any())
             ->method('getMessages')
-            ->will($this->returnValue($this->dummyMessages));
+            ->willReturn($this->dummyMessages);
         $this->flash->expects($this->any())
             ->method('getMessage')
             ->will($this->returnCallback(function ($key) {
