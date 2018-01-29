@@ -64,12 +64,8 @@ class TwigMessagesTest extends \PHPUnit_Framework_TestCase
     public function testMessagesInTemplateWithoutKey()
     {
         $result = $this->view->render('without-key.twig');
-        $expected = <<< EOF
-key1: my first message
-key1: another message
-key2: only one message
+        $expected = 'key1: my first messagekey1: another messagekey2: only one message';
 
-EOF;
         $this->assertEquals($expected, $result);
     }
 }

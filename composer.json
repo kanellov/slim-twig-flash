@@ -2,7 +2,7 @@
     "name": "kanellov/slim-twig-flash",
     "type": "library",
     "description": "A Twig extension to access Slim Flash messages in templates",
-    "license": "GPL-3.0+",
+    "license": "GPL-3.0-or-later",
     "keywords": ["slim","framework","provider","flash","message", "twig", "extension", "view"],
     "authors": [
         {
